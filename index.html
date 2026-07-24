@@ -826,7 +826,7 @@ async function loadDigitalInvitation() {
         }
         
         if(document.getElementById(`title-slider-${sliderNum}`)) document.getElementById(`title-slider-${sliderNum}`).textContent = title;
-        if(document.getElementById(`desc-slider-${sliderNum}`)) document.getElementById(`desc-slider-${sliderNum}`).textContent = desc || '';
+        if(document.getElementById(`desc-slider-${sliderNum}`)) document.getElementById(`desc-slider-${sliderNum}`).innerHTML = desc || '';
         
         const slidesContainer = document.getElementById(`slides-${sliderNum}`);
         const dotsContainer = document.getElementById(`dots-${sliderNum}`);
